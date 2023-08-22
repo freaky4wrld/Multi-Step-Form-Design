@@ -80,7 +80,7 @@ body{
     border-radius: 50%;
     font-family: 'ubuntu-bold';
 }
-.circle-btn:hover{
+.circle-btn:hover, .selected-btn{
     background-color: var(--light-blue);
     border-color: var(--light-blue);
     color: var(--marine-blue);
@@ -126,6 +126,9 @@ body{
 .form-contents label{
     font-family: 'ubuntu-reg';
     color: var(--marine-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .form-contents input{
     padding: 1rem;
@@ -147,8 +150,16 @@ body{
     top: 54px;
     left: 354px;
 }
+.next-btn:hover{
+    filter: brightness(1.7);
+    cursor: pointer;
+}
 .form-contents input:focus, .form-contents input:hover{
     outline: none;
     border-color: var(--purplish-blue);
     cursor: pointer;
+}
+
+.error-mssg{
+    color: var(--strawberry-red);
 }

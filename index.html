@@ -14,7 +14,7 @@
       <div class="sidebar-bg">
         <div id="sidebar">
           <div class="sidebar-option">
-            <button type="button" class="circle-btn">1</button>                  
+            <button type="button" class="circle-btn selected-btn">1</button>                  
             <div class="button-info">
               <p>step 1</p>
             <h4>your info</h4>
@@ -48,27 +48,27 @@
           <h1>Personal info</h1>
           <p>Please provide your name, email address, and phone number.</p>
         </div>
-        <form action="#" method="post" id="personal-info-form">
+        <form action="#" method="get" id="personal-info-form">
           <fieldset class="form-container">
             <div class="form-contents">
-              <label for="person_name">Name</label>
+              <label for="person_name">Name <span class="error-mssg"></span></label>
               <input type="text" name="person_name" id="person_name" placeholder="e.g. Stephen King">
             </div>
             
             <div class="form-contents">
-              <label for="person_email">Email Address</label>
-              <input type="email" name="person_email" id="person_email" placeholder="e.g. stephenking@lorem.com">
+              <label for="person_email">Email Address <span class="error-mssg"></span></label>
+              <input type="email" name="person_email" id="person_email" placeholder="e.g. stephenking@lorem.com" required>
             </div>
             
             <div class="form-contents">
-              <label for="person_phone">Phone Number</label>
-              <input type="text" name="person_phone" id="person_phone" placeholder="e.g. +1 234 567 890">
+              <label for="person_phone">Phone Number <span class="error-mssg"></span></label>
+              <input type="text" name="person_phone" id="person_phone" placeholder="e.g. +1 234 567 890" required>
             </div>
           </fieldset>
           <button type="submit" class="next-btn">Next Step</button>
         </form>
       </div>
     </div>
-
+    <script src="siteFunctioning.js"></script>
 </body>
 </html>
